@@ -3,6 +3,9 @@
   "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
-    { "source": "/knitbeta/(.*)", "destination": "/knitbeta/index.html" }
+    { "source": "/knitbeta/assets/(.*)", "destination": "/assets/$1" },
+    { "source": "/knitbeta/apps/(.*)", "destination": "/apps/$1" },
+    { "source": "/knitbeta", "destination": "/index.html" },
+    { "source": "/knitbeta/(.*)", "destination": "/index.html" }
   ]
 }
